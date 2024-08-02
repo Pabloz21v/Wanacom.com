@@ -11,24 +11,43 @@
       crossorigin="anonymous"
     />
     <style>
-       
-      /* .card img {
-        transform: scale(1.5); 
-      
-      } */
-      /* .card {
-          position: relative;
-          overflow: hidden;
+      body {
+        scrollbar-color: #1d30da black;
+        scrollbar-width: thin;
+      }
+
+      .scroll-test{
+        display: flex;
+      }
+      .scroll-test:nth-child(odd){
+        transform: translateX(30%);
+        justify-content: flex-end;
+      }
+      .scroll-test:nth-child(even){
+        transform: translateX(-30%);
+        justify-content: flex-start;
+      }
+      .scroll-test{
+        animation:  appear linear;
+        animation-timeline: view();
+        animation-range: entry 20% contain 10%;
+        /* animation-range: entry 20% cover 30%; */
+        animation-fill-mode: both;
+      }
+      @keyframes appear{
+        from {
+            opacity: 0;
+            scale: 0.5;
         }
-        .card img {
-          transition: transform 0.3s ease;
+        to{
+            opacity: 1;
+            scale: 1;
+            transform: translateX(0);
         }
-        .card img:hover {
-          transform: scale(1.5);
-        } */
+      }
     </style>
   </head>
-  <body
+  <body 
     data-bs-theme="dark"
     style="background-image: url('./img/background.jpg'); height: 50px"
   >
@@ -104,7 +123,7 @@
                 <div class="">
                   <button
                     type="button"
-                    class="btn btn-light fw-medium px-4 py-3"
+                    class="btn btn-light fw-medium  py-3" style="width: fit-content;"
                   >
                     Agenda tu meet
                   </button>
@@ -181,8 +200,15 @@
         
       </div>
 
-      <!-- TEXTO grande -->
-       
+      <!-- BIG SCROLL -->
+      
+      
+      <div class="scroll-test"><img src="./img/platos/carrusel (1).jpg" alt=""></div>
+      <div class="scroll-test"><img src="./img/platos/carrusel (2).jpg" alt=""></div>
+      <div class="scroll-test"><img src="./img/platos/carrusel (3).jpg" alt=""></div>
+      <div class="scroll-test"><img src="./img/platos/carrusel (4).jpg" alt=""></div>
+
+        
     </main>
 
     <script
@@ -190,5 +216,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    
+    
   </body>
 </html>
