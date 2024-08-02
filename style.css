@@ -1,0 +1,229 @@
+body {
+  scrollbar-color: #1d30da black;
+  scrollbar-width: thin;
+}
+
+.guana-test {
+  color: #4e77c5;
+  font-size: 6rem;
+  display: flex;
+  flex-direction: row;
+  animation: guana linear;
+  transform: translateX(200%);
+  animation-timeline: view();
+  animation-range: entry 10% contain 50%;
+  /* animation-range: entry 20% cover 30%; */
+  animation-fill-mode: both;
+}
+@keyframes guana {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+  25%{
+
+  }
+  50% {
+    opacity: 2;
+   
+    color: yellow;
+  }
+  75%{
+    
+  }
+  100% {
+    
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+  }
+}
+
+.guana-test-dos {
+  color: #4e77c5;
+  font-size: 6rem;
+  display: flex;
+  flex-direction: row;
+  animation: guanados linear;
+  transform: translateY(200%);
+  animation-timeline: view();
+  animation-range: entry 10% contain 50%;
+  /* animation-range: entry 20% cover 30%; */
+  animation-fill-mode: both;
+}
+@keyframes guanados {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+  25%{
+
+  }
+  50% {
+    opacity: 2;
+   
+    color: red;
+  }
+  75%{
+    
+  }
+  100% {
+    
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+.scroll-test:nth-child(odd) {
+  transform: translateX(30%);
+  justify-content: flex-end;
+}
+.scroll-test:nth-child(even) {
+  transform: translateX(-30%);
+  justify-content: flex-start;
+}
+.scroll-test {
+  display: flex;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 20% contain 10%;
+  /* animation-range: entry 20% cover 30%; */
+  animation-fill-mode: both;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+  }
+}
+.paralax-test {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.paralax-img-test {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4e77c5;
+  font-size: 6rem;
+  animation: guanaimg linear;
+  transform: translateY(-100%);
+  animation-timeline: view();
+  animation-range: entry 10% contain 10%;
+  /* animation-range: entry 20% cover 30%; */
+  animation-fill-mode: both;
+  }
+@keyframes guanaimg {
+0% {
+  opacity: 0;
+  scale: 0.1;
+}
+25%{
+  color: yellow;
+  
+}
+50% {
+  opacity: 2;
+ 
+  color: red;
+}
+75%{
+  color: green;
+}
+100% {
+  
+  opacity: 1;
+  scale: 1;
+  transform: translateX(0);
+}
+}
+
+.paralax-img-test img {
+  width: 100px;
+  position: absolute;
+}
+.img-paralax-1 {
+  top: 10%;
+  left: 20%;
+}
+.img-paralax-2 {
+  bottom: 15%;
+  left: 25%;
+}
+.img-paralax-3 {
+  top: 20%;
+  right: 20%;
+}
+.img-paralax-4 {
+  top: 70%;
+  right: 30%;
+}
+.img-paralax-5 {
+  bottom: 50%;
+  left: 15%;
+}
+
+
+.paralax-time-test {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4e77c5;
+  font-size: 6rem;
+  animation: guanatime ;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  transform: translateY(-100%);
+   
+  animation-fill-mode: both;
+  
+  }
+@keyframes guanatime {
+0% {
+  opacity: 0;
+  scale: 0.1;
+}
+25%{
+  color: yellow;
+  
+}
+50% {
+  opacity: 2;
+ 
+  color: red;
+}
+75%{
+  color: green;
+}
+90%{
+  color: #4e77c5;
+}
+100% {
+  
+  opacity: 1;
+  scale: 1;
+  transform: translateX(50);
+  }
+}

@@ -10,44 +10,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        scrollbar-color: #1d30da black;
-        scrollbar-width: thin;
-      }
-
-      .scroll-test{
-        display: flex;
-      }
-      .scroll-test:nth-child(odd){
-        transform: translateX(30%);
-        justify-content: flex-end;
-      }
-      .scroll-test:nth-child(even){
-        transform: translateX(-30%);
-        justify-content: flex-start;
-      }
-      .scroll-test{
-        animation:  appear linear;
-        animation-timeline: view();
-        animation-range: entry 20% contain 10%;
-        /* animation-range: entry 20% cover 30%; */
-        animation-fill-mode: both;
-      }
-      @keyframes appear{
-        from {
-            opacity: 0;
-            scale: 0.5;
-        }
-        to{
-            opacity: 1;
-            scale: 1;
-            transform: translateX(0);
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="locomotive-scroll.css" /> -->
+    <style></style>
   </head>
-  <body 
+  <body
     data-bs-theme="dark"
     style="background-image: url('./img/background.jpg'); height: 50px"
   >
@@ -106,9 +73,8 @@
       </nav>
     </header>
 
-    
     <main class="mt-3 container">
-        <!-- PRESENTACION -->
+      <!-- PRESENTACION -->
       <div class="card mb-3 mt-5">
         <div class="row g-0">
           <div class="col-md-7">
@@ -116,22 +82,24 @@
               <h5 class="card-title fs-3 text-primary-emphasis">
                 Hace despegar tu negocio.
               </h5>
-              <p class="card-text display-1 fw-semibold " style="line-height: 0.75;">
+              <p
+                class="card-text display-1 fw-semibold"
+                style="line-height: 0.75"
+              >
                 Brindamos soluciones creativas y efectivas.
               </p>
               <div class="d-flex flex-row row row-cols-1 row-cols-md-2">
                 <div class="">
                   <button
                     type="button"
-                    class="btn btn-light fw-medium  py-3" style="width: fit-content;"
+                    class="btn btn-light fw-medium py-3"
+                    style="width: fit-content"
                   >
                     Agenda tu meet
                   </button>
                 </div>
-                <div class="card-text fs-4 ">
-                  <small class="text-body-secondary"
-                    ></small
-                  >
+                <div class="card-text fs-4">
+                  <small class="text-body-secondary"></small>
                 </div>
               </div>
             </div>
@@ -139,76 +107,161 @@
           <div class="col-md-5">
             <img
               src="./img/OWINKS1.png"
-              class="img-fluid rounded-end "
+              class="img-fluid rounded-end"
               alt="..."
-              
             />
           </div>
         </div>
       </div>
 
       <!-- ITEMS -->
-      <div class="d-flex flex-row justify-content-around mt-5 conteiner">
+      <div class="d-flex flex-row justify-content-around mt-5 container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="d-flex flex-row justify-content-around ">
-                <img
-                  decoding="async"
-                  src="./img/008_Marca.png"
-                  alt=""
-                  class=""
-                  width="64"
-                  height="64"
-                />
-                <div>
-                    <p class="">Wanabrand</p>
-                    <p>Nos especializamos en ayudar a las empresas a construir una identidad visual,</p>
-                </div>
-                
-              </div>
-              <div class="d-flex flex-row justify-content-around">
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  src="./img/002_webhosting.png"
-                  alt=""
-                  class=""
-                  width="64"
-                  height="64"
-                />
-                <div>
-                    <p class="">Wanahost.</p>
-                    <p>Desarrollo de paginas web, administración de hosting y dominios.</p>
-                </div>
-              </div>
-              <div class="d-flex flex-row justify-content-around">
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  src="./img/004_Redes sociales.png"
-                  alt=""
-                  class=""
-                  width="64"
-                  height="64"
-                />
-                <div>
-                    <p class="">Wana-ads.</p>
-                    <p>GESTIÓN DE ANUNCIOS DIGITALES / OPTIMIZACIÓN DE CAMPAÑAS /LÍNEA DE CRÉDITO</p>
-                </div>
-                
-              </div>
+          <div class="d-flex flex-row justify-content-around">
+            <img
+              decoding="async"
+              src="./img/008_Marca.png"
+              alt=""
+              class=""
+              width="64"
+              height="64"
+            />
+            <div>
+              <p class="">Wanabrand</p>
+              <p>
+                Nos especializamos en ayudar a las empresas a construir una
+                identidad visual,
+              </p>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-around">
+            <img
+              decoding="async"
+              loading="lazy"
+              src="./img/002_webhosting.png"
+              alt=""
+              class=""
+              width="64"
+              height="64"
+            />
+            <div>
+              <p class="">Wanahost.</p>
+              <p>
+                Desarrollo de paginas web, administración de hosting y dominios.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-around">
+            <img
+              decoding="async"
+              loading="lazy"
+              src="./img/004_Redes sociales.png"
+              alt=""
+              class=""
+              width="64"
+              height="64"
+            />
+            <div>
+              <p class="">Wana-ads.</p>
+              <p>
+                GESTIÓN DE ANUNCIOS DIGITALES / OPTIMIZACIÓN DE CAMPAÑAS /LÍNEA
+                DE CRÉDITO
+              </p>
+            </div>
+          </div>
         </div>
-        
       </div>
 
       <!-- BIG SCROLL -->
+      <section class="container">
+        <div class="scroll-test ">
+          <img src="./img/platos/carrusel (1).jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="scroll-test">
+          <img src="./img/platos/carrusel (2).jpg" class="img-fluid"  alt="" />
+        </div>
+        <div class="scroll-test">
+          <img src="./img/platos/carrusel (3).jpg" class="img-fluid"  alt="" />
+        </div>
+        <div class="scroll-test">
+          <img src="./img/platos/carrusel (4).jpg" class="img-fluid"  alt="" />
+        </div>
+      </section>
       
-      
-      <div class="scroll-test"><img src="./img/platos/carrusel (1).jpg" alt=""></div>
-      <div class="scroll-test"><img src="./img/platos/carrusel (2).jpg" alt=""></div>
-      <div class="scroll-test"><img src="./img/platos/carrusel (3).jpg" alt=""></div>
-      <div class="scroll-test"><img src="./img/platos/carrusel (4).jpg" alt=""></div>
 
-        
+      <!-- PARALAX -->
+      <div class="container">
+        <section class="paralax-test">
+          <h1 class="guana-test">
+            <span>G</span>
+            <span>U</span>
+            <span>A</span>
+            <span>N</span>
+            <span>A</span>
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+          </h1>
+        </section>
+
+        <section class="paralax-img-test">
+          <div class="scroll-img-test">
+            <img class="img-paralax-1" src="./img/002_webhosting.png" alt="" />
+          </div>
+          <div class="scroll-img-test">
+            <img
+              class="img-paralax-2"
+              src="./img/004_Redes sociales.png"
+              alt=""
+            />
+          </div>
+          <div class="scroll-img-test">
+            <img class="img-paralax-3" src="./img/008_Marca.png" alt="" />
+          </div>
+          <div class="scroll-img-test">
+            <img
+              class="img-paralax-4"
+              src="./img/009_Capacitaciones.png"
+              alt=""
+            />
+          </div>
+          <div class="scroll-img-test">
+            <img
+              class="img-paralax-5"
+              src="./img/010_Capacitaciones (1).png"
+              alt=""
+            />
+          </div>
+
+          <h1 style="font-size: 5rem">Te ofrecemos</h1>
+        </section>
+
+        <section class="paralax-test">
+          <h1 class="guana-test-dos">
+            <span class="">G</span>
+            <span class="">U</span>
+            <span class="">A</span>
+            <span class="">N</span>
+            <span class="">A</span>
+            <span class="">C</span>
+            <span class="">O</span>
+            <span class="">M</span>
+          </h1>
+        </section>
+
+        <section class="paralax-test">
+          <h1 class="paralax-time-test">
+            <span class="">G</span>
+            <span class="">U</span>
+            <span class="">A</span>
+            <span class="">N</span>
+            <span class="">A</span>
+            <span class="">C</span>
+            <span class="">O</span>
+            <span class="">M</span>
+          </h1>
+        </section>
+      </div>
     </main>
 
     <script
@@ -216,7 +269,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    
-    
+
+    <!-- <script src="locomotive-scroll.min.js"></script> -->
+    <!-- <script src="./scripts.js"></script> -->
   </body>
 </html>
