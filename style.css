@@ -20,19 +20,16 @@ body {
     opacity: 0;
     scale: 0.1;
   }
-  25%{
-
+  25% {
   }
   50% {
     opacity: 2;
-   
+
     color: yellow;
   }
-  75%{
-    
+  75% {
   }
   100% {
-    
     opacity: 1;
     scale: 1;
     transform: translateX(0);
@@ -56,26 +53,21 @@ body {
     opacity: 0;
     scale: 0.1;
   }
-  25%{
-
+  25% {
   }
   50% {
     opacity: 2;
-   
+
     color: red;
   }
-  75%{
-    
+  75% {
   }
   100% {
-    
     opacity: 1;
     scale: 1;
     transform: translateX(0);
   }
 }
-
-
 
 .scroll-test:nth-child(odd) {
   transform: translateX(30%);
@@ -113,7 +105,6 @@ body {
   justify-content: center;
 }
 
-
 .paralax-img-test {
   position: relative;
   width: auto;
@@ -129,30 +120,28 @@ body {
   animation-range: entry 10% contain 10%;
   /* animation-range: entry 20% cover 30%; */
   animation-fill-mode: both;
-  }
+}
 @keyframes guanaimg {
-0% {
-  opacity: 0;
-  scale: 0.1;
-}
-25%{
-  color: yellow;
-  
-}
-50% {
-  opacity: 2;
- 
-  color: red;
-}
-75%{
-  color: green;
-}
-100% {
-  
-  opacity: 1;
-  scale: 1;
-  transform: translateX(0);
-}
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    opacity: 2;
+
+    color: red;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+  }
 }
 
 .paralax-img-test img {
@@ -180,7 +169,6 @@ body {
   left: 15%;
 }
 
-
 .paralax-time-test {
   position: relative;
   width: auto;
@@ -190,40 +178,38 @@ body {
   justify-content: center;
   color: #4e77c5;
   font-size: 6rem;
-  animation: guanatime ;
+  animation: guanatime;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
   animation-delay: 1s;
   transform: translateY(-100%);
-   
+
   animation-fill-mode: both;
-  
-  }
+}
 @keyframes guanatime {
-0% {
-  opacity: 0;
-  scale: 0.1;
-}
-25%{
-  color: yellow;
-  
-}
-50% {
-  opacity: 2;
- 
-  color: red;
-}
-75%{
-  color: green;
-}
-90%{
-  color: #4e77c5;
-}
-100% {
-  
-  opacity: 1;
-  scale: 1;
-  transform: translateX(50);
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    opacity: 2;
+
+    color: red;
+  }
+  75% {
+    color: green;
+  }
+  90% {
+    color: #4e77c5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(50);
   }
 }
